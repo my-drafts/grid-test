@@ -1,0 +1,36 @@
+.page{
+  display: grid;
+  font-weight: bold;
+  grid-template-areas: "h h h"
+                 "s1 s3 s3"
+                 "s2 s2 s4"
+                 "f f f";
+}
+
+.page > * {
+ border: 1px dotted red;
+}
+
+.page header {
+  grid-area: h;
+}
+
+.page section.s1 {
+  grid-area: s1;
+}
+
+.page section.s2 {
+  grid-area: s2;
+}
+
+.page section.s3 {
+  grid-area: s3;
+}
+
+.page section.s4 {
+  grid-area: s4;
+}
+
+.page footer {
+  grid-area: f;
+}
